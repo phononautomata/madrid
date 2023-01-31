@@ -11,9 +11,6 @@ lower_path = 'results/'
 
 def plot_global_dynamics(global_ost, pars):
 
-    # Load relevant data
-    print("hold it!")
-
     # Prepare figure
     fig = plt.figure(facecolor='w')
     ax = fig.add_subplot(111, axisbelow=True)
@@ -58,10 +55,10 @@ def plot_global_dynamics(global_ost, pars):
         Rtg_upper = Rtg_dict['p95']
 
     # Plot main statistic time series for both scenarios
-    ax.plot(time, i_t_main, linestyle='solid', color='dodgerblue', alpha=1.0)
-    ax.plot(time, r_t_main, linestyle='solid', color='firebrick', alpha=1.0)
+    ax.plot(time, i_t_main, linestyle='solid', color='dodgerblue', alpha=1.0, label=r'$I/N$')
+    ax.plot(time, r_t_main, linestyle='solid', color='firebrick', alpha=1.0, label=r'$R/N$')
     ax_r = ax.twinx()
-    ax_r.plot(time, Rtg_t_main, linestyle='dashed', color='black', alpha=0.8)
+    ax_r.plot(time, Rtg_t_main, linestyle='dashed', color='black', alpha=0.8, label=r'$R_t$')
     
     # Plot deviation time series for both scenarios
     ax.fill_between(time, i_t_lower, i_t_upper, color='royalblue', alpha=0.3)
@@ -75,10 +72,12 @@ def plot_global_dynamics(global_ost, pars):
 
     # Settings
     ax.set_title('Example of dynamical trajectories')
-    ax.set_ylabel('normalized global population')
+    ax.set_ylabel('normalized global population by health status')
     ax.set_xlabel('time (days)')
     ax_r.set_ylabel(r'$R_t$')
     ax_r.set_ylim(0.0, np.max(Rtg_upper) + 1)
+    ax.legend(loc='best')
+    ax_r.legend(loc='best')
 
     # Font & font sizes
     plt.rcParams.update({'font.size': 15})

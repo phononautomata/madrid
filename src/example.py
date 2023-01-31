@@ -19,7 +19,7 @@ from model import launch_model, launch_filtered_model
 
 import plot_example as pt
 
-path = os.path.dirname(os.getcwd())
+path = os.getcwd()
 
 
 def perform_experiment_zero(pars):
@@ -79,7 +79,7 @@ def main():
     pars['nsims'] = 10
     pars['T_MAX'] = 700
     pars['theta'] = 500
-    pars['chi'] = 1.0
+    pars['chi'] = 0.9
     pars['epsilon'] = 1.0
     pars['hold'] = True
     pars['tspan'] = 13

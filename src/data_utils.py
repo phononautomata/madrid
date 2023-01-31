@@ -26,7 +26,7 @@ import numpy as np
 import pandas as pd
 import pickle as pk
 
-path = os.path.dirname(os.getcwd())
+path = os.getcwd()
 
 
 def get_patch_code_integer_dictionary(city):
