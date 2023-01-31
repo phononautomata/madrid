@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import analysis as an
 import data_utils as du
 
-path = os.path.dirname(os.getcwd())
+path = os.getcwd()
 lower_path = 'results/'
 
 
