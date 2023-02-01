@@ -1,4 +1,6 @@
-# Introduction
+# MADRID
+
+## Introduction
 This repository contains the minimal code for the simulations in the manuscript: 
 "Assessing the effectiveness of perimeter lockdowns as a response to epidemics at the urban scale: the case of Madrid" (under peer-review)
 
@@ -15,10 +17,12 @@ for organizing the simulations output and plotting routines lack (hopefully, I w
 related utilies, the scripts for figure 1 and figure 2 in the manuscript are present, and also a basic example and plotting scripts that allows the user to 
 explore the system's global dynamics.
 
-# Setup Explain how to set up the environment and dependencies needed to run your code.
+## Setup 
+The model requires basic standard packages as [NumPy](https://numpy.org). It also requires [Pickle](https://docs.python.org/3/library/pickle.html) for output results storage and input data for some plots.
 
-# Usage: Provide clear and concise instructions on how to use your code, including any command line arguments or input parameters.
+# Basic Usage
 
-# Examples: Include a few examples of how to use your code, along with the expected outputs.
+# Examples 
 
-# License: Include information about the license under which your code is distributed, such as the MIT License.
+# License
+[MIT]
