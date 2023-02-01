@@ -22,9 +22,16 @@ The model requires the basic standard packages such as [NumPy](https://numpy.org
 
 ## Basic Usage
 Assuming all the required packages are correctly installed, and the full madrid directory (subdirectories and files) has been downloaded in the home folder, then you can execute the example script by typing:
-```python ~/madrid/src example.py
+
 ```
+
+python ~/madrid/src example.py
+
+```
+
 Model parameters can be modified within the script.
+
+In a similar fashion, you can launch plot_figure1.py and plot_figure2.py scripts.
 
 ## Upgrades
 In the future I hope to give a more friendly-user version of the model together with more features.
