@@ -33,5 +33,8 @@ Model parameters can be modified within the script.
 
 In a similar fashion, you can launch plot_figure1.py and plot_figure2.py scripts.
 
+## Data
+The metapopulation model uses real data for populating the patches in the system and for informing the mobility flows. The population data can be found [here]([https://github.com/phononautomata/madrid/tree/master/data](https://github.com/phononautomata/madrid/blob/master/data/madrid_population.csv). The  left column  and the mobility data in human-readable format [here](https://github.com/phononautomata/madrid/blob/master/data/0000_referencia_maestra1_mitma_distrito/mad_ref_week_travel_matrix.csv).   
+
 ## Upgrades
 In the future I hope to give a more friendly-user version of the model together with more features.
