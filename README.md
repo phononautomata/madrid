@@ -18,11 +18,13 @@ related utilies, the scripts for figure 1 and figure 2 in the manuscript are pre
 explore the system's global dynamics.
 
 ## Setup 
-The model requires basic standard packages as [NumPy](https://numpy.org). It also requires [Pickle](https://docs.python.org/3/library/pickle.html) for output results storage and input data for some plots.
+The model requires the basic standard packages such as [NumPy](https://numpy.org) and [Pandas](https://pandas.pydata.org). It also requires [Pickle](https://docs.python.org/3/library/pickle.html) for output results storage and input data for some plots, and [datetime](https://docs.python.org/3/library/datetime.html).
 
-# Basic Usage
+## Basic Usage
+Assuming all the required packages are correctly installed, and the full madrid directory (subdirectories and files) has been downloaded in the home folder, then you can execute the example script by typing:
+```python ~/madrid/src example.py
+```
+Model parameters can be modified within the script.
 
-# Examples 
-
-# License
-[MIT]
+## Upgrades
+In the future I hope to give a more friendly-user version of the model together with more features.
